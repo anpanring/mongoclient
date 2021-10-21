@@ -79,8 +79,8 @@ class Edit extends Component {
   // This following section will display the update-form that takes the input from the user to update the data.
   render() {
     return (
-      <div>
-        <h3 align="center">Update Record</h3>
+      <div style={{ marginTop: 20, marginLeft: 20, marginRight: 20}}>
+        <h3>Update Record</h3>
         <form onSubmit={this.onSubmit}>
           <div className="form-group">
             <label>Person's Name: </label>
@@ -91,7 +91,7 @@ class Edit extends Component {
               onChange={this.onChangePersonName}
             />
           </div>
-          <div className="form-group">
+          <div className="form-group mt-2">
             <label>Position: </label>
             <input
               type="text"
@@ -101,7 +101,7 @@ class Edit extends Component {
             />
           </div>
           <div className="form-group">
-            <div className="form-check form-check-inline">
+            <div className="form-check form-check-inline mt-2">
               <input
                 className="form-check-input"
                 type="radio"
@@ -113,7 +113,7 @@ class Edit extends Component {
               />
               <label className="form-check-label">Intern</label>
             </div>
-            <div className="form-check form-check-inline">
+            <div className="form-check form-check-inline mt-2">
               <input
                 className="form-check-input"
                 type="radio"
@@ -125,7 +125,7 @@ class Edit extends Component {
               />
               <label className="form-check-label">Junior</label>
             </div>
-            <div className="form-check form-check-inline">
+            <div className="form-check form-check-inline mt-2">
               <input
                 className="form-check-input"
                 type="radio"
@@ -137,14 +137,12 @@ class Edit extends Component {
               />
               <label className="form-check-label">Senior</label>
             </div>
-          </div>
-          <br />
- 
+          </div> 
           <div className="form-group">
             <input
               type="submit"
               value="Update Record"
-              className="btn btn-primary"
+              className="btn btn-primary mt-2"
             />
           </div>
         </form>

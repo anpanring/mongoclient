@@ -64,7 +64,7 @@ export default class Create extends Component {
   // This following section will display the form that takes the input from the user.
   render() {
     return (
-      <div style={{ marginTop: 20 }}>
+      <div style={{ marginTop: 20, marginLeft: 20, marginRight: 20}}>
         <h3>Create New Record</h3>
         <form onSubmit={this.onSubmit}>
           <div className="form-group">
@@ -76,7 +76,7 @@ export default class Create extends Component {
               onChange={this.onChangePersonName}
             />
           </div>
-          <div className="form-group">
+          <div className="form-group mt-2">
             <label>Person's position: </label>
             <input
               type="text"
@@ -86,7 +86,7 @@ export default class Create extends Component {
             />
           </div>
           <div className="form-group">
-            <div className="form-check form-check-inline">
+            <div className="form-check form-check-inline mt-2">
               <input
                 className="form-check-input"
                 type="radio"
@@ -98,7 +98,7 @@ export default class Create extends Component {
               />
               <label className="form-check-label">Intern</label>
             </div>
-            <div className="form-check form-check-inline">
+            <div className="form-check form-check-inline mt-2">
               <input
                 className="form-check-input"
                 type="radio"
@@ -110,7 +110,7 @@ export default class Create extends Component {
               />
               <label className="form-check-label">Junior</label>
             </div>
-            <div className="form-check form-check-inline">
+            <div className="form-check form-check-inline mt-2">
               <input
                 className="form-check-input"
                 type="radio"
@@ -127,7 +127,7 @@ export default class Create extends Component {
             <input
               type="submit"
               value="Create person"
-              className="btn btn-primary"
+              className="btn btn-primary mt-2"
             />
           </div>
         </form>
